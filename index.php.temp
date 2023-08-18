@@ -1,0 +1,72 @@
+<?php
+require_once 'db.php';
+//require_once 'checkLogin.php';
+session_start();
+//jeżeli istnieje plik _install.php, usuń go
+if(file_exists('_install.php'))
+{
+    unlink('_install.php');
+}
+
+//login form
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rejestracja</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="panel">
+        <div id="panel">
+            <header>
+                <h1>Witaj</h1>
+            </header>
+            <main id="register">
+
+                <?php
+                    if(@isset($_SESSION['error']))
+                    {
+                        echo '<p class="error">'.$_SESSION['error'].'</p>';
+                        unset($_SESSION['error']);
+                    }
+                ?>
+                <table class="form">
+                    <form method="post" action="login.php">
+                        <tr>
+                            <td>
+                                <label>Login</label>
+                            </td>
+                            <td>
+                                <input type="text" name="username">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Hasło</label>
+                            </td>
+                            <td>
+                                <input type="password" name="password">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" name="login" class="btn" value="Login"/>
+                            </td>
+                        </tr>
+                    </form>
+                    <tr>
+                        <td colspan="2">
+                            <a href="register.php"><button>Rejestracja</button></a>
+                        </td>
+                    </tr>
+                </table>
+            </main>
+        </div>
+    </div>
+    <?php
+    require_once 'footer.php';
+    ?>
+</body>
+</html>

@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1.18rem;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+}
+
+::selection {
+    background-color: rgb(135, 250, 160);
+    color: white;
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(135, 250, 160);
+}
+
+body {
+    padding: 15px;
+    font-size: 1.3rem;
+}
+
+a {
+    color: black;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: rgb(135, 250, 160);
+}
+
+nav {
+    width: 97%;
+    margin: 0 auto;
+    padding: 4px;
+    border-bottom: 1px solid rgb(222, 222, 222);
+    font-weight: bold;
+}
+
+nav ol {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ol li {
+    min-width: 85px;
+    padding: 2px;
+    margin: 3px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+header {
+    width: 97%;
+    margin: 0 auto;
+    padding: 4px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#info {
+    width: 97%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+main#start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 97%;
+    margin: 0 auto;
+    background-color: rgba(252, 252, 252, 0.5);
+    padding: 5px;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 5px;
+}
+
+main#start a {
+    width: 23%;
+    min-width: 250px;
+    height: 150px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: .2s;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: bolder;
+
+}
+
+main#start a:hover {
+    background-color: rgb(135, 250, 160);
+    color: white;
+    border: 1px solid white;
+}
+
+main#start a h3 {
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+}
+
+main#work {
+    width: 97%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+main#work table.form {
+    min-width: 450px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 5px;
+}
+
+main#work table.form tr {
+    margin: 0 auto;
+    padding: 5px;
+}
+
+main#work table.form tr td {
+    margin: 0 auto;
+    padding: 5px;
+}
+
+main#work table.form tr td input[type="submit"] {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    font-weight: bolder;
+    transition: .2s;
+}
+
+main#work table.form tr td input[type="submit"]:hover {
+    background-color: rgb(135, 250, 160);
+    color: white;
+    border: 1px solid white;
+}
+
+#monthShow {
+    text-align: center;
+}
+
+#monthShow table.month {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 20cm;
+}
+
+#monthShow table.month td,
+#monthShow table.month th {
+    padding: 4px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#monthShow table.month .weekend {
+    background-color: rgba(72, 110, 192, 1);
+}
+
+#monthShow table.month th {
+    background-color: rgb(123, 211, 94)
+}
+
+#monthShow #doPodzialu {
+    width: 74%;
+    float: left;
+}
+
+#monthShow #legenda {
+    width: 24%;
+    float: right;
+}
+
+#monthShow #legenda table {
+    margin: 5px auto;
+    border-collapse: collapse;
+
+}
+
+#monthShow #legenda table td {
+    padding: 4px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#monthShow #legenda button {
+    width: 80%;
+}
+
+.cancel {
+    width: 100%;
+}
+
+#monthShow #legenda button,
+.cancel {
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    font-weight: bolder;
+    transition: .2s;
+}
+
+#monthShow #legenda button:hover,
+.cancel:hover {
+    background-color: rgb(135, 250, 160);
+    color: white;
+    border: 1px solid white;
+}
+
+#print table.month {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#print table.month td,
+#print table.month th {
+    padding: 0 4px;
+    font-size: 16px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#print table.month .weekend {
+    background-color: rgba(72, 110, 192, 1);
+}
+
+#print table.month th {
+    background-color: rgb(123, 211, 94)
+}
+
+#puste {
+    clear: both;
+    height: 50px;
+}
+
+#stopka {
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(252, 252, 252, 1);
+}
+
+#stopka a {
+    text-decoration: underline;
+}
+
+main#register {
+    width: 97%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+main#register table.form {
+    min-width: 450px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 5px;
+}
+
+main#register table.form tr {
+    margin: 0 auto;
+    padding: 5px;
+}
+
+main#register table.form tr td {
+    margin: 0 auto;
+    padding: 5px;
+}
+
+main#register table.form tr td input,
+main#register table.form tr td select {
+    width: 99%;
+}
+
+main#register table.form tr td input[type="submit"],
+main#register table.form tr td button {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    font-weight: bolder;
+    transition: .2s;
+}
+
+main#register table.form tr td input[type="submit"]:hover,
+main#register table.form tr td button:hover {
+    background-color: rgb(135, 250, 160);
+    color: white;
+    border: 1px solid white;
+}
+
+main#uzytkownicy {
+    width: 97%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+main#uzytkownicy table {
+    min-width: 550px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+main#uzytkownicy table tr {
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+main#uzytkownicy table tr td,
+main#uzytkownicy table tr th {
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+}
+
+main#uzytkownicy table tr td:hover,
+main#uzytkownicy table tr:hover,
+main#uzytkownicy table tr th:hover {
+    background-color: rgba(155, 155, 155, 0.187);
+}
+
+main#uzytkownicy table tr td button {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    font-weight: bolder;
+    transition: .2s;
+}
+
+main#uzytkownicy table tr td button:hover {
+    background-color: rgb(135, 250, 160);
+    color: white;
+    border: 1px solid white;
+}
+
+
+/* Detect is printing? */
+@media print {
+    #puste {
+        clear: both;
+        height: .5cm;
+    }
+
+    #stopka,
+    #stopka a {
+        font-size: 7px;
+        color: #fffffe;
+    }
+
+    #stopka {
+        height: .5cm;
+        background-color: white;
+    }
+
+    table.month {
+        width: 10cm;
+    }
+}
+.bigError
+{
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+}
