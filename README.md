@@ -13,6 +13,30 @@ A simple application to manage attendance lists
 1. Add whole timeframes in one click
 1. Counting days of remote work
 
+## db.sql
+Holidays that occur in Poland are added to the db.sql file. If you want to replace it with your country, edit it as follows: (lines form **77**)
+```sql
+INSERT INTO
+    `dniwolne` (`id`, `data`, `nazwaSwieta`, `aktywne`)
+VALUES
+    (
+        'YYYY-MM-DD',
+        'Event 1',
+        1
+    ),
+    (
+        'YYYY-MM-DD',
+        'Event 2',
+        1
+    ),
+    ...
+    (
+        'YYYY-MM-DD',
+        'Event N',
+        1
+    );
+```
+
 ## TODO
 
 ## Licence

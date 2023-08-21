@@ -78,9 +78,23 @@ INSERT INTO
     `dniwolne` (`id`, `data`, `nazwaSwieta`, `aktywne`)
 VALUES
     (
-        1,
-        '2023-08-15',
-        'Wniebowzięcie Najświętszej Maryi Panny',
+        '2023-11-05',
+        'Wszystkich Świętych',
+        1
+    ),
+    (
+        '2023-11-11',
+        'Narodowe Święto Niepodległości',
+        1
+    ),
+    (
+        '2023-12-25',
+        'pierwszy dzień Bożego Narodzenia',
+        1
+    ),
+    (
+        '2023-12-26',
+        'drugi dzień Bożego Narodzenia',
         1
     );
 
