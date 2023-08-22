@@ -37,7 +37,24 @@ VALUES
     );
 ```
 
+## SCREENSHOTS
+
+### Login
+![Login](https://git.kry008.xyz/kry008/Attendance-list/raw/branch/main/README_IMG/login.png)
+
+### Main page
+| Admin | User |
+| --- | --- |
+| ![Admin](https://git.kry008.xyz/kry008/Attendance-list/raw/branch/main/README_IMG/admin.png) | ![User](https://git.kry008.xyz/kry008/Attendance-list/raw/branch/main/README_IMG/user.png) |
+
+### Reports
+![Reports](https://git.kry008.xyz/kry008/Attendance-list/raw/branch/main/README_IMG/reports1.png)  
+![Reports](https://git.kry008.xyz/kry008/Attendance-list/raw/branch/main/README_IMG/reports2.png)  
+![Reports](https://git.kry008.xyz/kry008/Attendance-list/raw/branch/main/README_IMG/reports3.png)  
+
+
 ## TODO
+1. Multi-language support
 
 ## Licence
 Attendance-list © 2023 by kry008 is licensed under Attribution-NonCommercial-NoDerivatives 4.0 International 
