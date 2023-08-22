@@ -30,7 +30,10 @@ require_once 'checkLogin.php';
                                 <label for="end">Zakończenie pracy</label>
                             </td>
                             <td>
-                                <input type="time" name="end" id="end" value="<?php echo date('H:00'); ?>" max="<?php echo date('TH:i'); ?>">
+                                <?php
+                                    $h = date('H')+1;
+                                ?>
+                                <input type="time" name="end" id="end" value="<?php echo $h.":00" ?>" max="<?php echo $h.":00" ?>">
                             </td>
                         </tr>
                         <tr>
